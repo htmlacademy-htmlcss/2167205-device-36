@@ -3,10 +3,158 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+  <body class="body">
+    <header>
+      <nav class="navigation">
+        <a href="" class="logo-link">
+          <img src="" alt="" class="logo-image">
+        </a>
+        <form action="" class="form-search">
+          <input type="text" class="search-input">
+          <button class="search-button">Найти</button>
+        </form>
+        <ul class="user-menu">
+          <li class="user-menu-item user-block">
+            <a href="#" class="user-menu-link">Войти</a>
+          </li>
+          <li class="user-menu-item">
+            <a href="#" class="user-menu-link">Сравнить</a>
+          </li>
+          <li class="user-menu-item">
+            <a href="#" class="user-menu-link">Корзина
+              <span class="cart-count">2</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-menu-container">
+        <div class="catalog-container"> <!--для плюса-->
+          <a href="#" class="catalog-link">Каталог товаров</a>
+          <div class="catalog-wrapper">
+            <ul class="catalog-list">
+              <li class="catalog-item">
+                <a href="#" class="catalog-link">Виртуальная реальность</a>
+              </li>
+              <li class="catalog-item">
+                <a href="#" class="catalog-link">Моноподы для cелфи</a>
+              </li>
+              <li class="catalog-item">
+                <a href="#" class="catalog-link">Экшн-камеры</a>
+              </li>
+            </ul>
+            <ul class="catalog-list">
+              <li class="catalog-item">
+                <a href="#" class="catalog-link">Фитнес-браслеты</a>
+              </li>
+              <li class="catalog-item">
+                <a href="#" class="catalog-link">Умные часы</a>
+              </li>
+            </ul>
+            <ul class="catalog-list">
+              <li class="catalog-item">
+                <a href="#" class="catalog-link">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-menu">
+          <ul class="main-menu-list">
+            <li class="main-menu-item">
+              <a href="#" class="main-menu-link">Доставка</a>
+            </li>
+            <li class="main-menu-item">
+              <a href="#" class="main-menu-link">Гарантия</a>
+            </li>
+            <li class="main-menu-item">
+              <a href="#" class="main-menu-link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Магазин гаджетов Девайс</h1>
+      <section class="hero actual-product">
+        <div class="slider">
+          <div class="slider-frame">
+            <ul class="slider-list">
+            <li class="slider-item">
+              <div class="slider-image-container">
+                <img src="" alt="квадрокоптер" class="slider-image">
+              </div>
+              <div class="slider-text-container">
+                <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
+                <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                <a href="#" class="slider-link">Подробнее</a>
+                <dl class="details">
+                  <dt class="details-text">800 м</dt>
+                    <dd class="details-name">Дальность полета</dd>
+                  <dt class="details-text">50 м</dt>
+                    <dd class="details-name">Радиус поражения</dd>
+                </dl>
+              </div>
+            </li>
+            <li class="slider-item">
+              <div class="slider-image-container">
+                <img src="" alt="" class="slider-image">
+              </div>
+              <div class="slider-text-container">
+                <h3 class="slider-title">Худеем правильно!</h3>
+                <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                <a href="#" class="slider-link">Подробнее</a>
+                <dl class="details">
+                  <dt class="details-text">48 часов</dt>
+                    <dd class="details-name">Без подзарядки</dd>
+                </dl>
+              </div>
+            </li>
+            <li class="slider-item">
+              <div class="slider-image-container">
+                <img src="" alt="" class="slider-image">
+              </div>
+              <div class="slider-text-container">
+                <h3 class="slider-title">Делай селфи, как Бен Стиллер! </h3>
+                <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+                <a href="" class="slider-link">Подробнее</a>
+                <dl class="details">
+                  <dt class="details-text">8,5 м</dt>
+                    <dd class="details-name">Длина палки</dd>
+                  <dt class="details-text">5 кг</dt>
+                    <dd class="details-name">Вес палки</dd>
+                  <dt class="details-text">Карбон</dt>
+                    <dd class="details-name">Материал</dd>
+                </dl>
+              </div>
+            </li>
+            </ul>
+          </div>
+          <ul class="slider-bullets">
+            <li class="bullet-item">
+              <button class="bullet">
+                <span class="visually-hidden">Показать первый слайд</span>
+              </button>
+            </li>
+            <li class="bullet-item">
+              <button class="bullet">
+                <span class="visually-hidden">Показать второй слайд</span>
+              </button>
+            </li>
+            <li class="bullet-item">
+              <button class="bullet">
+                <span class="visually-hidden">Показать третий слайд</span>
+              </button>
+            </li>
+          </ul>
+          <a href="#" class="slider-control slider-control-previous">
+            <span class="visually-hidden">Показать предыдущий слайд</span>
+          </a>
+          <a href="#" class="slider-control slider-control-next">
+            <span class="visually-hidden">Показать следующий слайд</span>
+          </a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
