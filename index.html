@@ -4,103 +4,110 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="/styles/style.css">
   </head>
 
   <body class="body">
     <header class="page-header">
-      <nav class="navigation">
+      <div class="page-header-wrapper">
         <a href="index.html" class="logo-link">
           <img src="./image/header/Device-logo.svg" alt="Логотип магазина Девайс" width="145" height="36"
             class="logo-image">
         </a>
-        <form action="https://echo.htmlacademy.ru/" method="post" class="form-search" >
-          <input type="text" class="search-input">
-          <button class="search-button">Найти</button>
-        </form>
-        <ul class="user-menu">
-          <li class="user-menu-item user-block">
-            <a href="#" class="user-menu-link">Войти</a>
-          </li>
-          <li class="user-menu-item">
-            <a href="#" class="user-menu-link">Сравнить</a>
-          </li>
-          <li class="user-menu-item">
-            <a href="#" class="user-menu-link">Корзина
-              <span class="cart-count">2</span>
-            </a>
-            <div class="popover popover-cart">
-              <ul class="cart-list">
-                <li class="cart-item">
-                  <a href="#" class="cart-item-link">
-                    <img src="image/popover/simple-selfie-stick.jpg" width="39" height="43"
-                      alt="Любительская селфи-палка" class="cart-item-image">
-                    <p class="cart-item-name">Любительская селфи-палка</p>
-                  </a>
-                  <button class="delete-cart-item-image" type="button" aria-label="Удалить товар из корзины"></button>
-                </li>
-                <li class="cart-item">
-                  <a href="#" class="cart-item-link">
-                    <img src="image/popover/professioanl-selfie-stick.jpg" width="39" height="43"
-                      alt="Профессиональная селфи-палка" class="cart-item-image">
-                    <p class="cart-item-name">Профессиональная селфи-палка</p>
-                  </a>
-                  <button class="delete-cart-item-image" type="button" aria-label="Удалить товар из корзины"></button>
-                </li>
-              </ul>
-              <div class="cart-result">
-                <p class="cart-result-item">Товаров: 2</p>
-                <p class="cart-result-cost">Сумма: 2000 ₽</p>
-              </div>
-              <div class="cart-open">
-                <a href="#" class="cart-open-button">Открыть корзину</a>
-              </div>
+        <nav class="navigation">
+          <div class="navigation-top-line">
+            <form action="https://echo.htmlacademy.ru/" method="get" class="form-search">
+              <input type="text" class="search-input" name="search" placeholder="Поиск по сайту" required>
+              <button class="search-button">Найти</button>
+            </form>
+            <div class="login">
+              <a href="#" class="login-link login-button">Войти</a>
             </div>
-          </li>
-        </ul>
-      </nav>
-      <div class="main-menu-container">
-        <div class="catalog-container"> <!--для плюса-->
-          <a href="#" class="catalog-link">Каталог товаров</a>
-          <div class="catalog-wrapper">
-            <ul class="catalog-list">
-              <li class="catalog-item">
-                <a href="#" class="catalog-link">Виртуальная реальность</a>
+            <ul class="user-menu">
+              <li class="user-menu-item compair-products">
+                <a href="#" class="user-menu-link compair-products-button">Сравнить</a>
               </li>
-              <li class="catalog-item">
-                <a href="#" class="catalog-link">Моноподы для cелфи</a>
-              </li>
-              <li class="catalog-item">
-                <a href="#" class="catalog-link">Экшн-камеры</a>
-              </li>
-              <li class="catalog-item">
-                <a href="#" class="catalog-link">Фитнес-браслеты</a>
-              </li>
-              <li class="catalog-item">
-                <a href="#" class="catalog-link">Умные часы</a>
-              </li>
-              <li class="catalog-item">
-                <a href="#" class="catalog-link">Квадрокоптеры</a>
+              <li class="user-menu-item cart">
+                <a href="#" class="user-menu-link cart-button">
+                  <span class="cart-count">2</span>
+                  <span>Корзина</span>
+                </a>
+                <div class="popover popover-cart visually-hidden">
+                  <ul class="cart-list">
+                    <li class="cart-item">
+                      <a href="#" class="cart-item-link">
+                        <img src="image/popover/simple-selfie-stick.jpg" width="39" height="43"
+                          alt="Любительская селфи-палка" class="cart-item-image">
+                        <p class="cart-item-name">Любительская селфи-палка</p>
+                      </a>
+                      <button class="delete-cart-item-image" type="button"
+                        aria-label="Удалить товар из корзины"></button>
+                    </li>
+                    <li class="cart-item">
+                      <a href="#" class="cart-item-link">
+                        <img src="image/popover/professioanl-selfie-stick.jpg" width="39" height="43"
+                          alt="Профессиональная селфи-палка" class="cart-item-image">
+                        <p class="cart-item-name">Профессиональная селфи-палка</p>
+                      </a>
+                      <button class="delete-cart-item-image" type="button"
+                        aria-label="Удалить товар из корзины"></button>
+                    </li>
+                  </ul>
+                  <div class="cart-result">
+                    <p class="cart-result-item">Товаров: 2</p>
+                    <p class="cart-result-cost">Сумма: 2000 ₽</p>
+                  </div>
+                  <div class="cart-open">
+                    <a href="#" class="cart-open-button">Открыть корзину</a>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
-        </div>
-        <div class="main-menu">
-          <ul class="main-menu-list">
-            <li class="main-menu-item">
-              <a href="#" class="main-menu-link">Доставка</a>
-            </li>
-            <li class="main-menu-item">
-              <a href="#" class="main-menu-link">Гарантия</a>
-            </li>
-            <li class="main-menu-item">
-              <a href="#" class="main-menu-link">Контакты</a>
-            </li>
-          </ul>
-        </div>
+          <div class="navigation-bottom-line">
+            <div class="catalog-container"> <!--для плюса-->
+              <a href="#" class="catalog-link">Каталог товаров</a>
+              <div class="catalog-wrapper visually-hidden">
+                <ul class="catalog-list">
+                  <li class="catalog-item">
+                    <a href="#" class="catalog-item-link">Виртуальная реальность</a>
+                  </li>
+                  <li class="catalog-item">
+                    <a href="#" class="catalog-item-link">Моноподы для cелфи</a>
+                  </li>
+                  <li class="catalog-item">
+                    <a href="#" class="catalog-item-link">Экшн-камеры</a>
+                  </li>
+                  <li class="catalog-item">
+                    <a href="#" class="catalog-item-link">Фитнес-браслеты</a>
+                  </li>
+                  <li class="catalog-item">
+                    <a href="#" class="catalog-item-link">Умные часы</a>
+                  </li>
+                  <li class="catalog-item">
+                    <a href="#" class="catalog-item-link">Квадрокоптеры</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="main-menu">
+              <ul class="main-menu-list">
+                <li class="main-menu-item">
+                  <a href="#" class="main-menu-link">Доставка</a>
+                </li>
+                <li class="main-menu-item">
+                  <a href="#" class="main-menu-link">Гарантия</a>
+                </li>
+                <li class="main-menu-item">
+                  <a href="#" class="main-menu-link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
-    <main>
+    <main class="main-container">
       <h1 class="visually-hidden">Магазин гаджетов Девайс</h1>
       <section class="hero actual-product">
         <h2 class="visually-hidden">Популярные товары</h2>
@@ -282,30 +289,37 @@
           <h3 class="contacts-title title">Контакты</h3>
           <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить
             работоспособность покупки. </p>
-          <h4 class="contacts-adress-title title">Интернет-магазин «Девайс»</h4>
-          <address class="contact-address">
-            <p class="contact-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            <a href="tel:+78128121212" class="contact-phone">+7 (812) 812-12-12</a>
-          </address>
-          <h4 class="time-title title">Время работы</h4>
-          <p class="working-time">пн—пт: с 10:00 до 22:00 сб—вс: с 10:00 до 19:00</p>
+          <div class="contacts-address">
+            <h4 class="contacts-address-title">Интернет-магазин «Девайс»</h4>
+            <address class="contact-address-information">
+              <p class="contact-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+              <a href="tel:+78128121212" class="contact-phone">+7 (812) 812-12-12</a>
+            </address>
+          </div>
+          <div class="working-time">
+            <h4 class="time-title">Время работы</h4>
+            <p class="working-time-information">пн—пт: с 10:00 до 22:00 сб—вс: с 10:00 до 19:00</p>
+          </div>
           <a href="#" class="message">Напишите нам</a>
         </div>
       </section>
       <section class="newslatter">
         <h2 class="visually-hidden">Рассылка</h2>
-        <div class="newslatter-text-container">
-          <h3 class="newslatter-title title">Подпишитесь на рассылку</h3>
-          <p class="newslatter-notation">Еженедельный дайджест с обзорами новинок,
-          длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-        </div>
-        <div class="newslatter-form-container">
-          <form class="newslatter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="newslatter-email">Email</label>
-            <input class="newslatter-email" type="email" name="email" placeholder="Ваш e-mail" id="newslatter-email" required>
-            <button class="newslatter-button">Подписаться</button>
-          </form>
-          <span class="newslatter-information">Это бесплатно</span>
+        <div class="newalstter-wrapper">
+          <div class="newslatter-text-container">
+            <h3 class="newslatter-title title">Подпишитесь на рассылку</h3>
+            <p class="newslatter-notation">Еженедельный дайджест с обзорами новинок,
+              длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          </div>
+          <div class="newslatter-form-container">
+            <form class="newslatter-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="newslatter-email">Email</label>
+              <input class="newslatter-email" type="email" name="email" placeholder="Ваш e-mail" id="newslatter-email"
+                required>
+              <button class="newslatter-button">Подписаться</button>
+            </form>
+            <span class="newslatter-information">Это бесплатно</span>
+          </div>
         </div>
       </section>
     </main>
@@ -362,7 +376,7 @@
         </li>
       </ul>
     </footer>
-    <div class="modal-container modal-container-close">
+    <div class="modal-container modal-container-close visually-hidden">
       <div class="modal-window special-order">
         <h2 class="modal-window-title title">Доставка под заказ</h2>
         <button class="modal-close">
@@ -376,12 +390,14 @@
           </div>
           <div class="modal-form top-line">
             <label class="modal-form-title" for="email-input">Ваш e-mail:</label>
-            <input class="modal-form-field" type="email" id="email-input" name="email-input" placeholder="Введите e-mail">
+            <input class="modal-form-field" type="email" id="email-input" name="email-input"
+              placeholder="Введите e-mail">
             <span class="modal-form-hint modal-form-error">Забавный у вас адрес</span>
           </div>
           <div class="modal-form bottom-line">
             <label class="modal-form-title" for="order-description">Что нужно привезти:</label>
-            <input class="modal-form-field" type="text" id="order-description" name="order-description" placeholder="В свободной форме">
+            <input class="modal-form-field" type="text" id="order-description" name="order-description"
+              placeholder="В свободной форме">
           </div>
           <div class="modal-form bottom-line">
             <span class="modal-form-label">
@@ -399,7 +415,8 @@
               <button class="items-number-control turn-down-items" type="button">
                 <span class="visually-hidden">Уменьшить количество товаров</span>
               </button>
-              <input class="items-number" id="order-items-number" name="order-items-number" type="number" step="1" value="1" min="1">
+              <input class="items-number" id="order-items-number" name="order-items-number" type="number" step="1"
+                value="1" min="1">
               <button class="items-number-control turn-up-items" type="button">
                 <span class="visually-hidden">Добавить количество товаров</span>
               </button>
