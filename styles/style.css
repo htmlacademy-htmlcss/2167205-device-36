@@ -110,7 +110,7 @@ html {
   content: "";
   width: 16px;
   height: 16px;
-  background-image: url("/image/header/search-icon.svg");
+  background-image: url("../image/header/search-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -176,7 +176,7 @@ html {
   width: 13px;
   height: 12px;
   position: absolute;
-  background-image: url("/image/header/registration.svg");
+  background-image: url("../image/header/registration.svg");
   background-repeat: no-repeat;
   background-position: center;
   top: 25%;
@@ -225,7 +225,7 @@ html {
   width: 10px;
   height: 12px;
   position: absolute;
-  background-image: url("/image/header/compare.svg");
+  background-image: url("../image/header/compare.svg");
   background-position: center;
   background-repeat: no-repeat;
   top: 5px;
@@ -250,7 +250,7 @@ html {
   content: "";
   width: 16px;
   height: 14px;
-  background-image: url("/image/header/basket.svg");
+  background-image: url("../image/header/basket.svg");
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
@@ -302,7 +302,7 @@ html {
   content: "";
   width: 14px;
   height: 6px;
-  background-image: url("/image/popover/Start.svg");
+  background-image: url("../image/popover/Start.svg");
   background-repeat: no-repeat;
   position: absolute;
   top: -6px;
@@ -383,7 +383,7 @@ html {
   width: 10px;
   height: 10px;
   background-color: #000000;
-  background-image: url("/image/popover/delete.svg");
+  background-image: url("../image/popover/delete.svg");
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
@@ -465,7 +465,7 @@ html {
   content: "";
   width: 50px;
   height: 50px;
-  background-image: url("/image/header/plus.svg");
+  background-image: url("../image/header/plus.svg");
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -611,7 +611,7 @@ html {
   width: 250px;
   height: 135px;
   position: absolute;
-  background-image: url("/image/slider/slide-number-01.svg");
+  background-image: url("../image/slider/slide-number-01.svg");
   background-repeat: no-repeat;
   top: 30px;
   right: 2px;
@@ -764,7 +764,7 @@ html {
   height: 60px;
   border: none;
   cursor: pointer;
-  background-image: url("/image/slider/arrow.svg");
+  background-image: url("../image/slider/arrow.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: #ffffff;
@@ -885,7 +885,7 @@ html {
   width: 160px;
   height: 160px;
   background-color: #FFE17F;
-  background-image: url("/image/catalog-list/vr-glasses.svg");
+  background-image: url("../image/catalog-list/vr-glasses.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -911,7 +911,7 @@ html {
   width: 160px;
   height: 160px;
   background-color: #FFE17F;
-  background-image: url("/image/catalog-list/selfie-stick.svg");
+  background-image: url("../image/catalog-list/selfie-stick.svg");
   background-repeat: no-repeat;
   background-position: bottom center;
 }
@@ -937,7 +937,7 @@ html {
   width: 160px;
   height: 160px;
   background-color: #FFE17F;
-  background-image: url("/image/catalog-list/action-camera.svg");
+  background-image: url("../image/catalog-list/action-camera.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -963,7 +963,7 @@ html {
   width: 160px;
   height: 160px;
   background-color: #FFE17F;
-  background-image: url("/image/catalog-list/fitness-bracelet.svg");
+  background-image: url("../image/catalog-list/fitness-bracelet.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -989,7 +989,7 @@ html {
   width: 160px;
   height: 160px;
   background-color: #FFE17F;
-  background-image: url("/image/catalog-list/smart-watch.svg");
+  background-image: url("../image/catalog-list/smart-watch.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -1015,7 +1015,7 @@ html {
   width: 160px;
   height: 160px;
   background-color: #FFE17F;
-  background-image: url("/image/catalog-list/quadrocopter.svg");
+  background-image: url("../image/catalog-list/quadrocopter.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -1164,7 +1164,7 @@ html {
   content: "";
   width: 136px;
   height: 164px;
-  background-image: url("/image/offers/delivery.svg");
+  background-image: url("../image/offers/delivery.svg");
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
@@ -1181,7 +1181,7 @@ html {
   content: "";
   width: 171px;
   height: 195px;
-  background-image: url("/image/offers/guarantee.svg");
+  background-image: url("../image/offers/guarantee.svg");
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
@@ -1198,7 +1198,7 @@ html {
   content: "";
   width: 156px;
   height: 188px;
-  background-image: url("/image/offers/credit.svg");
+  background-image: url("../image/offers/credit.svg");
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
@@ -1259,7 +1259,7 @@ html {
   height: 100px;
   bottom: 0;
   left: 0;
-  background-image: url("/image/offers/delivery-button.svg");
+  background-image: url("../image/offers/delivery-button.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1270,7 +1270,7 @@ html {
   background-color: #F0F0F0;
   width: 125px;
   height: 100px;
-  background-image: url("/image/offers/delivery-button-information.svg");
+  background-image: url("../image/offers/delivery-button-information.svg");
   background-repeat: no-repeat;
   background-position: center;
   top: 0;
@@ -1574,7 +1574,7 @@ html {
   position: absolute;
   width: 16px;
   height: 16px;
-  background-image: url("/image/newslatter/Vector.svg");
+  background-image: url("../image/newslatter/Vector.svg");
   background-repeat: no-repeat;
   left: -30px;
   top: 7px;
