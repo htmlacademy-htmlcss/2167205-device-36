@@ -92,6 +92,7 @@ html {
   margin-top: 21px;
   margin-bottom: 46px;
   display: flex;
+  flex-wrap: wrap;
   box-sizing: border-box;
   align-items: center;
 }
@@ -331,6 +332,7 @@ html {
 
 .cart-item {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: #000000;
   padding: 20px;
@@ -343,6 +345,7 @@ html {
 
 .cart-item-link {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: top;
   text-decoration: none;
@@ -484,6 +487,7 @@ html {
   color: #000000;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   box-sizing: border-box;
   justify-content: space-between;
 }
@@ -499,6 +503,8 @@ html {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #000000;
+  display: inline-block;
+  text-align: center;
 }
 
 
@@ -523,6 +529,7 @@ html {
 
 .subcatalog {
   display: flex;
+  flex-wrap: wrap;
   justify-content: start;
   background-color: #FFE17F;
   position: absolute;
@@ -566,7 +573,7 @@ html {
 }
 
 .catalog-item-link::after {
-  content:"";
+  content: "";
   width: 100%;
   height: 1px;
   background-color: #000000;
@@ -590,11 +597,20 @@ html {
 .main-menu-list {
   margin: 0;
   padding: 0;
-  min-width: 471px;
+  width: 475px;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  justify-content: space-between;
+}
+
+.main-menu-item {
+  width: 127px;
+  margin-right: 45px;
+  text-align: center;
+}
+
+.main-menu-item:nth-child(3n) {
+  margin: 0;
 }
 
 .main-menu-item:hover {
@@ -657,8 +673,8 @@ html {
 }
 
 .slider-item {
-  display: grid;
-  grid-template-columns: 560px 560px;
+  display: flex;
+  flex-wrap: wrap;
   gap: 40px;
 }
 
@@ -672,6 +688,10 @@ html {
 
 .slider-image {
   display: block;
+}
+
+.slider-text-container {
+  width: 560px;
 }
 
 .slider-title {
@@ -784,6 +804,7 @@ html {
   left: 30px;
   display: flex;
   justify-content: space-between;
+  z-index: 10;
 }
 
 .slider-control {
@@ -867,13 +888,11 @@ html {
   margin: 0 auto;
   box-sizing: border-box;
   margin-bottom: 70px;
-  padding-top: 192px;
 }
 
 .product-categories-list {
-  display: grid;
-  grid-template-columns: 160px 160px 160px 160px 160px 160px;
-  grid-template-rows: 60px;
+  display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   width: 100%;
   list-style-type: none;
@@ -882,13 +901,33 @@ html {
 }
 
 .product-categories-item {
-
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 160px;
+}
+
+.product-categories-link:hover >.product-image-container {
+  background-color: #FFC700;
+}
+
+.product-categories-link:active {
+  opacity: 0.3;
+}
+
+.product-categories-link:focus-visible {
+  outline: 2px solid #AF4FFF;
 }
 
 .product-categories-link {
   display: block;
   text-decoration: none;
+}
+
+.product-image-container {
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 .product-categories-title {
@@ -903,39 +942,17 @@ html {
 
 }
 
-.virtual-reality::before {
-  position: absolute;
-  display: inline-block;
-  top: -192px;
-  right: 0;
-  content: "";
+.virtual-reality {
   width: 160px;
   height: 160px;
   background-color: #FFE17F;
   background-image: url("../image/catalog-list/vr-glasses.svg");
-  background-repeat: no-repeat;
   background-position: center center;
+  background-repeat: no-repeat;
 }
 
-.virtual-reality:hover::before {
-  background-color: #FFC700;
-}
-
-.virtual-reality:active {
-  opacity: 0.3;
-}
-
-.virtual-reality:focus-visible {
-  outline: 2px solid #AF4FFF;
-}
-
-.monopods::before {
-  position: absolute;
-  display: inline-block;
-  top: -192px;
-  right: 0;
-  content: "";
-  width: 160px;
+.monopods {
+   width: 160px;
   height: 160px;
   background-color: #FFE17F;
   background-image: url("../image/catalog-list/selfie-stick.svg");
@@ -943,24 +960,7 @@ html {
   background-position: bottom center;
 }
 
-.monopods:hover::before {
-  background-color: #FFC700;
-}
-
-.monopods:active {
-  opacity: 0.3;
-}
-
-.monopods:focus-visible {
-  outline: 2px solid #AF4FFF;
-}
-
-.action-cameras::before {
-  position: absolute;
-  display: inline-block;
-  top: -192px;
-  right: 0;
-  content: "";
+.action-cameras {
   width: 160px;
   height: 160px;
   background-color: #FFE17F;
@@ -969,24 +969,7 @@ html {
   background-position: center center;
 }
 
-.action-cameras:hover::before {
-  background-color: #FFC700;
-}
-
-.action-cameras:active {
-  opacity: 0.3;
-}
-
-.action-cameras:focus-visible {
-  outline: 2px solid #AF4FFF;
-}
-
-.fitness-bracelets::before {
-  position: absolute;
-  display: inline-block;
-  top: -192px;
-  right: 0;
-  content: "";
+.fitness-bracelets {
   width: 160px;
   height: 160px;
   background-color: #FFE17F;
@@ -995,24 +978,7 @@ html {
   background-position: center center;
 }
 
-.fitness-bracelets:hover::before {
-  background-color: #FFC700;
-}
-
-.fitness-bracelets:active {
-  opacity: 0.3;
-}
-
-.fitness-bracelets:focus-visible {
-  outline: 2px solid #AF4FFF;
-}
-
-.smart-watches::before {
-  position: absolute;
-  display: inline-block;
-  top: -192px;
-  right: 0;
-  content: "";
+.smart-watches {
   width: 160px;
   height: 160px;
   background-color: #FFE17F;
@@ -1021,42 +987,13 @@ html {
   background-position: center center;
 }
 
-.smart-watches:hover::before {
-  background-color: #FFC700;
-}
-
-.smart-watches:active {
-  opacity: 0.3;
-}
-
-.smart-watches:focus-visible {
-  outline: 2px solid #AF4FFF;
-}
-
-.quadcopters::before {
-  position: absolute;
-  display: inline-block;
-  top: -192px;
-  right: 0;
-  content: "";
+.quadcopters {
   width: 160px;
   height: 160px;
   background-color: #FFE17F;
   background-image: url("../image/catalog-list/quadrocopter.svg");
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.quadcopters:hover::before {
-  background-color: #FFC700;
-}
-
-.quadcopters:active {
-  opacity: 0.3;
-}
-
-.quadcopters:focus-visible {
-  outline: 2px solid #AF4FFF;
 }
 
 /* offers */
@@ -1271,7 +1208,7 @@ html {
   color: #000000;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  padding: 40px 0 40px 0;
+  padding: 40px 125px 40px 125px;
   box-sizing: border-box;
   display: block;
   margin-bottom: 70px;
@@ -1282,8 +1219,8 @@ html {
   position: absolute;
   background-color: #ffe17f;
   width: 125px;
-  height: 100px;
-  bottom: 0;
+  height: 100%;
+  top: 0;
   left: 0;
   background-image: url("../image/offers/delivery-button.svg");
   background-repeat: no-repeat;
@@ -1295,7 +1232,7 @@ html {
   position: absolute;
   background-color: #F0F0F0;
   width: 125px;
-  height: 100px;
+  height: 100%;
   background-image: url("../image/offers/delivery-button-information.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1380,7 +1317,7 @@ html {
   padding: 0;
 }
 
-.information-link{
+.information-link {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -1662,11 +1599,19 @@ html {
 .footer-offers-list {
   margin: 0;
   padding: 0;
-  width: 450px;
+  width: 455px;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  justify-content: space-between;
+}
+
+.footer-offers-item {
+  width: max-content;
+  margin-right: 35px;
+}
+
+.footer-offers-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .footer-offers-link {
@@ -1750,7 +1695,14 @@ html {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  justify-content: space-between;
+}
+
+.footer-social-item {
+  margin-right: 15px;
+}
+
+.footer-social-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .footer-social-link {
